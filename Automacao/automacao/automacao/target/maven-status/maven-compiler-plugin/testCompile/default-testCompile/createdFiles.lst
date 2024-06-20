@@ -1,0 +1,2 @@
+com\bugbank\acceptance\TestsLoginCucumber.class
+com\bugbank\steps\LoginSteps.class
