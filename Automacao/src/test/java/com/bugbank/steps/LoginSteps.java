@@ -104,13 +104,6 @@ public class LoginSteps {
     }
 
     // Cenário 6
-    /*
-     * @E("preenchido com uma senha valida {string}")
-     * public void preenchido_com_uma_senha_valida(String password) {
-     * loginPage.inputPassword(password);
-     * loginPage.createLocalStorage(password, password);
-     * }
-     */
     @E("que o usuario tenha preenchido com um {string} e a {string} valido")
     public void que_o_usuario_tenha_preenchido_com_uma_email_e_a_senha_valido(String email, String password) {
         loginPage.createLocalStorage(email, password);
@@ -141,5 +134,16 @@ public class LoginSteps {
     @Entao("o usuario deve permanecer na tela inicial pois nao esta logada")
     public void o_usuario_deve_permanecer_na_tela_inicial_pois_nao_esta_logada() {
         assertTrue(loginPage.currentPage().equals(urlBugBank));
+    }
+
+    // Cenario 8
+    @E("o usuario digitou um email nao cadastrado")
+    public void o_usuario_digitou_um_email_nao_cadastrado() {
+        loginPage.inputLogin("emailinvalido@email.com");
+    }
+
+    @Entao("devera ser exibida ao usuario uma mensagem de email ou senha invalidos")
+    public void devera_ser_exibida_ao_usuario_uma_mensagem_de_email_ou_senha_invalidos() {
+        assertTrue(loginPage.modalErrorLogin().isDisplayed());
     }
 }

@@ -31,8 +31,7 @@ public class Hook {
                 // driver = new EdgeDriver(options);
                 // driver.manage().window().maximize();
 
-                // wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             } catch (Exception e) {
                 throw new RuntimeException("Falha ao inicializar o WebDriver: " + e.getMessage(), e);
             }

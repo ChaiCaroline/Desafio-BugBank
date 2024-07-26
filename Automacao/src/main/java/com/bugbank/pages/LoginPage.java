@@ -6,6 +6,8 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.bugbank.utils.PageObject;
 
@@ -63,5 +65,11 @@ public class LoginPage extends PageObject {
 
     public WebElement formUserLogin() {
         return driver.findElement(By.className("card__login"));
+    }
+
+    public WebElement modalErrorLogin() {
+        return wait.until(
+                ExpectedConditions
+                        .visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Usuário ou senha inválido.')]")));
     }
 }

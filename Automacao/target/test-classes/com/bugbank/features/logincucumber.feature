@@ -59,3 +59,10 @@ Funcionalidade: Validação dos Campos de Login no BugBank
     E o usuario nao esta logado no BugBank
     Quando o usuario tentar acessar a pagina atraves da url 'https://bugbank.netlify.app/home'
     Entao o usuario deve permanecer na tela inicial pois nao esta logada
+
+    Cenário: Exibir um texto de erro, ao tentar logar com credenciais incorretas
+    Dado que o usuario esta na tela inicial do BugBank
+    E o usuario digitou um email nao cadastrado
+    E tenha preechido com uma senha
+    Quando o usuario ao clicar no botao de acessar
+    Entao devera ser exibida ao usuario uma mensagem de email ou senha invalidos
