@@ -43,17 +43,19 @@ public class RegistroSteps {
     // Cenario 2
     @E("o usuario cria uma conta com o opcao de saldo ativada")
     public void o_usuario_cria_uma_conta_com_o_opcao_de_saldo_ativada() {
-
+        registroPage.buttonRegister().click();
+        registroPage.registerForm("Chaiene", "chaiene@email.com", "123", true);
     }
 
     @Quando("o usuario preencher os campos de email e senha da conta recem criada")
     public void o_usuario_preencher_os_campos_de_email_e_senha_da_conta_recem_criada() {
-
+        loginPage.checkInputLogin("Chaiene", "123");
+        loginPage.clickButtonAcessar();
     }
 
     @Então("devera ser exibida na tela inicial do bugbank com um saldo inicial de {string}")
     public void devera_ser_exibida_na_tela_inicial_do_bugbank_com_um_saldo_inicial_de(String string) {
-
+        System.out.println(registroPage.balance());
     }
 
     // Cenario 3

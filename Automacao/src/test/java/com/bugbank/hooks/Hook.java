@@ -21,6 +21,7 @@ public class Hook {
             try {
                 // google chrome
                 ChromeOptions options = new ChromeOptions();
+                options.setPageLoadStrategy(PageLoadStrategy.EAGER);
                 driver = new ChromeDriver(options);
                 driver.manage().window().maximize();
 
