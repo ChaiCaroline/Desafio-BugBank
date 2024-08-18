@@ -26,10 +26,10 @@ E que o usuario nao tenha preenchido nenhum campo
 Quando o usuario clicar em cadastrar
 Então devera ser retornado em tela uma mensagem campo e obrigatorio
 
-Cenário: Exibir mensagem de erro ao preencher com e-mail inválido
+Esquema do Cenário: Exibir mensagem de erro ao preencher com e-mail inválido
 Dado que o usuario esta na tela inicial do bugbank
 E o usuario clica em registrar
-Quando o usuario tiver preenchindo o campo de email com um email invalido 'email'
+Quando o usuario tiver preenchindo o campo de email com um email invalido "<email>"
 Então devera ser exibida uma mensagem de erro
 Exemplos:
         | email           |
