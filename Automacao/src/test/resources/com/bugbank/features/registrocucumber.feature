@@ -53,17 +53,14 @@ Então devera ser exibido uma mensagem de campo nome obrigatorio
 Cenário: Exibir uma mensagem de erro caso o campo de senha esteja em branco
 Dado que o usuario esta na tela inicial do bugbank
 E o usuario clica em registrar
-E o usuario digitou um email valido 'teste@email.com'
-E o usuario preencheu o nome
+E o usuario preencheu com um email valido 'teste@email.com' e nome
 Quando o usuario clicar em cadastrar
 Então devera ser exibido uma mensagem de campo obrigatorio
 
 Cenário: Exibir uma mensagem de erro caso o campo de confirmação de senha esteja diferente do campo de senha
 Dado que o usuario esta na tela inicial do bugbank
 E o usuario clica em registrar
-E o usuario digitou um email valido 'teste@email.com'
-E o usuario preencheu o nome
-E o usuario preencheu uma senha
+E o usuario preencheu um email valido 'teste@email.com', nome e senha
 E o usuario digitou uma senha diferente no campo de confirmacao de senha
 Quando o usuario clicar em cadastrar
 Então devera ser exibida uma mensagem de erro indicando que as senhas nao coincidem

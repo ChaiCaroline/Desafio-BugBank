@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bugbank.runners.TestsLoginCucumber" time="18.449" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bugbank.runners.TestsRegistroCucumber" time="32.149" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,108 +56,130 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Exibir mensagem de erro ao tentar acessar sem preencher com e-mail e senha" classname="Validação dos Campos de Login no BugBank" time="1.911">
+  <testcase name="Usuário clica no botão de registro" classname="Exibição do formulário de registro" time="1.502">
     <system-out><![CDATA[
-@login
-CenÃ¡rio: Exibir mensagem de erro ao tentar acessar sem preencher com e-mail e senha &amp#27;[90m# com/bugbank/features/logincucumber.feature:10&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                                &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mque o usuario nao tenha preenchido o email e a senha&amp#27;[0m                            &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_nao_tenha_preenchido_o_email_e_a_senha()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                                    &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro com o texto preencha os campos&amp#27;[0m      &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_uma_mensagem_de_erro_com_o_texto_preencha_os_campos()&amp#27;[0m
+@registro
+CenÃ¡rio: UsuÃ¡rio clica no botÃ£o de registro                                 &amp#27;[90m# com/bugbank/features/registrocucumber.feature:5&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                        &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no botao de registrar&amp#27;[0m                             &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_no_botao_de_registrar()&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibido o formulario para o registro da conta do usuario&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibido_o_formulario_para_o_registro_da_conta_do_usuario()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #1" classname="Validação dos Campos de Login no BugBank" time="1.5">
+  <testcase name="Exibir saldo inicial ao acessar a conta #1" classname="Exibição do formulário de registro" time="3.827">
     <system-out><![CDATA[
-@login
-Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido    &amp#27;[90m# com/bugbank/features/logincucumber.feature:24&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                            &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email.com'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.oUsuarioPreencherOCampoDeEmailComUmEmailInvalido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro com o texto email invalido&amp#27;[0m      &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_uma_mensagem_de_erro_com_o_texto_email_invalido()&amp#27;[0m
+@registro
+CenÃ¡rio: Exibir saldo inicial ao acessar a conta                                         &amp#27;[90m# com/bugbank/features/registrocucumber.feature:10&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                                     &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario cria uma conta com o opcao de saldo ativada&amp#27;[0m                                &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_cria_uma_conta_com_o_opcao_de_saldo_ativada()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher os campos de email e senha da conta recem criada&amp#27;[0m            &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_preencher_os_campos_de_email_e_senha_da_conta_recem_criada()&amp#27;[0m
+Saldo em conta R$ 1.000,00
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida na tela inicial do bugbank com um saldo inicial de &amp#27;[0m&amp#27;[32m&amp#27;[1m'1.000,00'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_na_tela_inicial_do_bugbank_com_um_saldo_inicial_de(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #2" classname="Validação dos Campos de Login no BugBank" time="1.438">
+  <testcase name="Exibir saldo inicial ao acessar a conta #2" classname="Exibição do formulário de registro" time="2.492">
     <system-out><![CDATA[
-@login
-Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido      &amp#27;[90m# com/bugbank/features/logincucumber.feature:25&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                              &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email@email'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.oUsuarioPreencherOCampoDeEmailComUmEmailInvalido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro com o texto email invalido&amp#27;[0m        &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_uma_mensagem_de_erro_com_o_texto_email_invalido()&amp#27;[0m
+@registro
+CenÃ¡rio: Exibir saldo inicial ao acessar a conta                                         &amp#27;[90m# com/bugbank/features/registrocucumber.feature:16&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                                     &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario cria uma conta com a opcao de saldo desativado&amp#27;[0m                             &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_cria_uma_conta_com_a_opcao_de_saldo_desativado()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher os campos de email e senha da conta recem criada&amp#27;[0m            &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_preencher_os_campos_de_email_e_senha_da_conta_recem_criada()&amp#27;[0m
+Saldo em conta R$ 0,00
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser exibida na tela inicial do bugbank com um saldo inicial zerado &amp#27;[0m&amp#27;[32m&amp#27;[1m'0,00'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_na_tela_inicial_do_bugbank_com_um_saldo_inicial_zerado(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #3" classname="Validação dos Campos de Login no BugBank" time="1.448">
+  <testcase name="Exibir mensagem de campo é obrigatório" classname="Exibição do formulário de registro" time="1.694">
     <system-out><![CDATA[
-@login
-Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido     &amp#27;[90m# com/bugbank/features/logincucumber.feature:26&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                             &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m'@email.com'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.oUsuarioPreencherOCampoDeEmailComUmEmailInvalido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro com o texto email invalido&amp#27;[0m       &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_uma_mensagem_de_erro_com_o_texto_email_invalido()&amp#27;[0m
+@registro
+CenÃ¡rio: Exibir mensagem de campo Ã© obrigatÃ³rio                       &amp#27;[90m# com/bugbank/features/registrocucumber.feature:22&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                  &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                                      &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mque o usuario nao tenha preenchido nenhum campo&amp#27;[0m                   &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_nao_tenha_preenchido_nenhum_campo()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar em cadastrar&amp#27;[0m                                &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_em_cadastrar()&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser retornado em tela uma mensagem campo e obrigatorio&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_retornado_em_tela_uma_mensagem_campo_e_obrigatorio()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Não exibir mensagem de erro ao preencher o campo de e-mail com um e-mail válido" classname="Validação dos Campos de Login no BugBank" time="1.454">
+  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #1" classname="Exibição do formulário de registro" time="1.642">
     <system-out><![CDATA[
-@login
-CenÃ¡rio: NÃ£o exibir mensagem de erro ao preencher o campo de e-mail com um e-mail vÃ¡lido &amp#27;[90m# com/bugbank/features/logincucumber.feature:28&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                                     &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email@email.com'&amp#27;[0m                     &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_tenha_preenchido_com_um_email_valido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                                         &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mnao deve ser retornado para o usuario nenhuma mensagem de erro no campo email&amp#27;[0m    &amp#27;[90m# com.bugbank.steps.LoginSteps.nao_deve_ser_retornado_para_o_usuario_nenhuma_mensagem_de_erro_no_campo_email()&amp#27;[0m
+@registro
+Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido            &amp#27;[90m# com/bugbank/features/registrocucumber.feature:36&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                                    &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                                                        &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario tiver preenchindo o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m"email.com"&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_tiver_preenchindo_o_campo_de_email_com_um_email_invalido(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro&amp#27;[0m                                         &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_uma_mensagem_de_erro()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Exibir mensagem de erro, quando não preencher o campo de senha" classname="Validação dos Campos de Login no BugBank" time="1.491">
+  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #2" classname="Exibição do formulário de registro" time="1.604">
     <system-out><![CDATA[
-@login
-CenÃ¡rio: Exibir mensagem de erro, quando nÃ£o preencher o campo de senha                            &amp#27;[90m# com/bugbank/features/logincucumber.feature:34&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                                               &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email@email.com'&amp#27;[0m                               &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_tenha_preenchido_com_um_email_valido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mnao tenha preenchido nenhuma senha&amp#27;[0m                                                             &amp#27;[90m# com.bugbank.steps.LoginSteps.nao_tenha_preenchido_nenhuma_senha()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                                                   &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser apresentado ao usuario uma mensagem de erro com o texto campo senha obrigatorio&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_apresentado_ao_usuario_uma_mensagem_de_erro_com_o_texto_campo_senha_obrigatorio()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario deve permanecer na tela de login&amp#27;[0m                                                     &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_deve_permanecer_na_tela_de_login()&amp#27;[0m
+@registro
+Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido              &amp#27;[90m# com/bugbank/features/registrocucumber.feature:37&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                                      &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                                                          &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario tiver preenchindo o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m"email@email"&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_tiver_preenchindo_o_campo_de_email_com_um_email_invalido(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro&amp#27;[0m                                           &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_uma_mensagem_de_erro()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Exibir o texto digitado ao clicar no ícone no campo de senha." classname="Validação dos Campos de Login no BugBank" time="1.483">
+  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #3" classname="Exibição do formulário de registro" time="1.627">
     <system-out><![CDATA[
-@login
-CenÃ¡rio: Exibir o texto digitado ao clicar no Ã­cone no campo de senha. &amp#27;[90m# com/bugbank/features/logincucumber.feature:42&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                   &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email@email.com'&amp#27;[0m   &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_tenha_preenchido_com_um_email_valido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mtenha preechido com uma senha&amp#27;[0m                                      &amp#27;[90m# com.bugbank.steps.LoginSteps.tenha_preechido_com_uma_senha()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no Ã­cone de olho no campo de senha&amp#27;[0m           &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_clicar_no_Ã­cone_de_olho_no_campo_de_senha()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser exibido para o usuario a senha digitada&amp#27;[0m             &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibido_para_o_usuario_a_senha_digitada()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mdevera ser alterado o Ã­cone de olho no campo de senha&amp#27;[0m              &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_alterado_o_Ã­cone_de_olho_no_campo_de_senha()&amp#27;[0m
+@registro
+Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido             &amp#27;[90m# com/bugbank/features/registrocucumber.feature:38&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                                     &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                                                         &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario tiver preenchindo o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m"@email.com"&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_tiver_preenchindo_o_campo_de_email_com_um_email_invalido(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro&amp#27;[0m                                          &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_uma_mensagem_de_erro()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Redirecionar o usuário ao logar no sistema" classname="Validação dos Campos de Login no BugBank" time="1.584">
+  <testcase name="Não exibir mensagem de erro ao preencher o campo de e-mail com um e-mail válido" classname="Exibição do formulário de registro" time="6.769">
     <system-out><![CDATA[
-@login
-CenÃ¡rio: Redirecionar o usuÃ¡rio ao logar no sistema                          &amp#27;[90m# com/bugbank/features/logincucumber.feature:50&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                         &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-Valor armazenado no localStorage: {"name":"Paula","email":"teste@email.com","password":"123","accountNumber":"613-4","balance":1000,"logged":false}
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mque o usuario tenha preenchido com um &amp#27;[0m&amp#27;[32m&amp#27;[1m'teste@email.com'&amp#27;[0m&amp#27;[32m e a &amp#27;[0m&amp#27;[32m&amp#27;[1m'123'&amp#27;[0m&amp#27;[32m valido&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_tenha_preenchido_com_uma_email_e_a_senha_valido(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                             &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo usuario devera ser redirecionado para a tela inicial BugBank&amp#27;[0m       &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_devera_ser_redirecionado_para_a_tela_inicial_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mdeve ser apresentado as informacoes relacionadas ao usuario&amp#27;[0m              &amp#27;[90m# com.bugbank.steps.LoginSteps.deve_ser_apresentado_as_informacoes_relacionadas_ao_usuario()&amp#27;[0m
+@registro
+CenÃ¡rio: NÃ£o exibir mensagem de erro ao preencher o campo de e-mail com um e-mail vÃ¡lido &amp#27;[90m# com/bugbank/features/registrocucumber.feature:40&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                                     &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                                                         &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher o campo de email com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'teste@email.com'&amp#27;[0m      &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_preencher_o_campo_de_email_com_um_email_valido(java.lang.String)&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mnao deve ser retornado para o usuario nenhuma mensagem de erro&amp#27;[0m                   &amp#27;[90m# com.bugbank.steps.RegistroSteps.nao_deve_ser_retornado_para_o_usuario_nenhuma_mensagem_de_erro()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Acessar a página inicial sem estar logado." classname="Validação dos Campos de Login no BugBank" time="1.426">
+  <testcase name="Exibir uma mensagem de erro caso o campo nome esteja em branco" classname="Exibição do formulário de registro" time="2.22">
     <system-out><![CDATA[
-@login
-CenÃ¡rio: Acessar a pÃ¡gina inicial sem estar logado.                                          &amp#27;[90m# com/bugbank/features/logincucumber.feature:57&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                                         &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario nao esta logado no BugBank&amp#27;[0m                                                     &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_nao_esta_logado_no_bug_bank()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario tentar acessar a pagina atraves da url &amp#27;[0m&amp#27;[32m&amp#27;[1m'https://bugbank.netlify.app/home'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_tentar_acessar_a_pagina_atraves_da_url(java.lang.String)&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo usuario deve permanecer na tela inicial pois nao esta logada&amp#27;[0m                       &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_deve_permanecer_na_tela_inicial_pois_nao_esta_logada()&amp#27;[0m
+@registro
+CenÃ¡rio: Exibir uma mensagem de erro caso o campo nome esteja em branco &amp#27;[90m# com/bugbank/features/registrocucumber.feature:46&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                    &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                                        &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario digitou um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'teste@email.com'&amp#27;[0m                 &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_digitou_um_email_valido(java.lang.String)&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar em cadastrar&amp#27;[0m                                  &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_em_cadastrar()&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibido uma mensagem de campo nome obrigatorio&amp#27;[0m       &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibido_uma_mensagem_de_campo_nome_obrigatorio()&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="Exibir um texto de erro, ao tentar logar com credenciais incorretas" classname="Validação dos Campos de Login no BugBank" time="2.039">
+  <testcase name="Exibir uma mensagem de erro caso o campo de senha esteja em branco" classname="Exibição do formulário de registro" time="1.785">
     <system-out><![CDATA[
-@login
-CenÃ¡rio: Exibir um texto de erro, ao tentar logar com credenciais incorretas   &amp#27;[90m# com/bugbank/features/logincucumber.feature:63&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                           &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario digitou um email nao cadastrado&amp#27;[0m                                  &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_digitou_um_email_nao_cadastrado()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mtenha preechido com uma senha&amp#27;[0m                                              &amp#27;[90m# com.bugbank.steps.LoginSteps.tenha_preechido_com_uma_senha()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                               &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser exibida ao usuario uma mensagem de email ou senha invalidos&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_ao_usuario_uma_mensagem_de_email_ou_senha_invalidos()&amp#27;[0m
+@registro
+CenÃ¡rio: Exibir uma mensagem de erro caso o campo de senha esteja em branco &amp#27;[90m# com/bugbank/features/registrocucumber.feature:53&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                        &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                                            &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario preencheu com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'teste@email.com'&amp#27;[0m&amp#27;[32m e nome&amp#27;[0m        &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_preencheu_com_um_email_valido__e_nome(java.lang.String)&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar em cadastrar&amp#27;[0m                                      &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_em_cadastrar()&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibido uma mensagem de campo obrigatorio&amp#27;[0m                &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibido_uma_mensagem_de_campo_obrigatorio()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Exibir uma mensagem de erro caso o campo de confirmação de senha esteja diferente do campo de senha" classname="Exibição do formulário de registro" time="2.214">
+    <system-out><![CDATA[
+@registro
+CenÃ¡rio: Exibir uma mensagem de erro caso o campo de confirmaÃ§Ã£o de senha esteja diferente do campo de senha &amp#27;[90m# com/bugbank/features/registrocucumber.feature:60&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m                                                         &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                                                                             &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario preencheu um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'teste@email.com'&amp#27;[0m&amp#27;[32m, nome e senha&amp#27;[0m                                      &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_preencheu_um_email_valido_nome_e_senha(java.lang.String)&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario digitou uma senha diferente no campo de confirmacao de senha&amp#27;[0m                                   &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_digitou_uma_senha_diferente_no_campo_de_confirmacao_de_senha()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar em cadastrar&amp#27;[0m                                                                       &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_em_cadastrar()&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro indicando que as senhas nao coincidem&amp#27;[0m                        &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_uma_mensagem_de_erro_indicando_que_as_senhas_nao_coincidem()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Funcionalidade do botão criar conta com saldo" classname="Exibição do formulário de registro" time="2.466">
+    <system-out><![CDATA[
+@registro
+CenÃ¡rio: Funcionalidade do botÃ£o criar conta com saldo      &amp#27;[90m# com/bugbank/features/registrocucumber.feature:68&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do bugbank&amp#27;[0m        &amp#27;[90m# com.bugbank.steps.RegistroSteps.que_o_usuario_esta_na_tela_inicial_do_bugbank()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario clica em registrar&amp#27;[0m                            &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clica_em_registrar()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no botao criar conta com saldo&amp#27;[0m    &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_no_botao_criar_conta_com_saldo()&amp#27;[0m
+  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mo botao criar conta com saldo devera ser habilitado&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_botao_criar_conta_com_saldo_devera_ser_habilitado()&amp#27;[0m
 ]]></system-out>
   </testcase>
 </testsuite>
