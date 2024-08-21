@@ -19,14 +19,13 @@ public class RegistroSteps {
     private WebDriver driver;
     private LoginPage loginPage;
     private RegistroPage registroPage;
-    private String urlBugBank = "https://bugbank.netlify.app/";
 
     // Cenario 1
     @Dado("que o usuario esta na tela inicial do bugbank")
     public void que_o_usuario_esta_na_tela_inicial_do_bugbank() {
         this.driver = Hook.getDriver(); // Obtém o WebDriver dos hooks
         this.loginPage = new LoginPage(driver); // Passa o WebDriver para o LoginPage
-        loginPage.openUrl(urlBugBank);
+        loginPage.openUrl(registroPage.urlBugBank);
         this.registroPage = new RegistroPage(driver);
     }
 

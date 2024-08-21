@@ -17,14 +17,12 @@ public class LoginSteps {
     private WebDriver driver;
     private LoginPage loginPage;
 
-    private String urlBugBank = "https://bugbank.netlify.app/";
-
     // Cenário 1
     @Dado("que o usuario esta na tela inicial do BugBank")
     public void que_o_usuario_esta_na_tela_inicial_do_bug_bank() {
         this.driver = Hook.getDriver(); // Obtém o WebDriver dos hooks
         this.loginPage = new LoginPage(driver); // Passa o WebDriver para o LoginPage
-        loginPage.openUrl(urlBugBank);
+        loginPage.openUrl(loginPage.urlBugBank);
     }
 
     @E("que o usuario nao tenha preenchido o email e a senha")
@@ -79,7 +77,7 @@ public class LoginSteps {
 
     @Entao("o usuario deve permanecer na tela de login")
     public void o_usuario_deve_permanecer_na_tela_de_login() {
-        loginPage.currentPage().equals(urlBugBank);
+        loginPage.currentPage().equals(loginPage.urlBugBank);
     }
 
     // Cenário 5
@@ -133,7 +131,7 @@ public class LoginSteps {
 
     @Entao("o usuario deve permanecer na tela inicial pois nao esta logada")
     public void o_usuario_deve_permanecer_na_tela_inicial_pois_nao_esta_logada() {
-        assertTrue(loginPage.currentPage().equals(urlBugBank));
+        assertTrue(loginPage.currentPage().equals(loginPage.urlBugBank));
     }
 
     // Cenario 8
