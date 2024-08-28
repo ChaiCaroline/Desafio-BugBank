@@ -27,7 +27,6 @@ public class Hook {
 
                 // edge
                 // EdgeOptions options = new EdgeOptions();
-                // options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
                 // driver = new EdgeDriver(options);
                 // driver.manage().window().maximize();
 

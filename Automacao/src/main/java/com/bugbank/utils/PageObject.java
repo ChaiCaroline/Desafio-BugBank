@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class PageObject {
 
     public WebDriver driver;
-    protected WebDriverWait wait;
+    public WebDriverWait wait;
 
     public String urlBugBank = "https://bugbank.netlify.app/";
 

@@ -25,7 +25,7 @@ public class RegistroSteps {
     public void que_o_usuario_esta_na_tela_inicial_do_bugbank() {
         this.driver = Hook.getDriver(); // Obtém o WebDriver dos hooks
         this.loginPage = new LoginPage(driver); // Passa o WebDriver para o LoginPage
-        loginPage.openUrl(registroPage.urlBugBank);
+        loginPage.openUrl(loginPage.urlBugBank);
         this.registroPage = new RegistroPage(driver);
     }
 
