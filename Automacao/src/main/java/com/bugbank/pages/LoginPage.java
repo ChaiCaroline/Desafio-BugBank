@@ -59,7 +59,7 @@ public class LoginPage extends PageObject {
     }
 
     public WebElement nameUser() {
-        return driver.findElement(By.id("textName"));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("textName")));
     }
 
     public WebElement formUserLogin() {

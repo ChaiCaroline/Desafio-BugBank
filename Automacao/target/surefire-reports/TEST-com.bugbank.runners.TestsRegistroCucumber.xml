@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bugbank.runners.TestsRegistroCucumber" time="32.149" tests="12" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bugbank.runners.TestsRegistroCucumber" time="31.447" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\LAB\AppData\Local\Temp\surefire4346908212792233365\surefirebooter-20240820160116765_3.jar C:\Users\LAB\AppData\Local\Temp\surefire4346908212792233365 2024-08-20T16-01-16_640-jvmRun1 surefire-20240820160116765_1tmp surefire_0-20240820160116765_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\LAB\AppData\Local\Temp\surefire15936443247308953592\surefirebooter-20240830100512066_3.jar C:\Users\LAB\AppData\Local\Temp\surefire15936443247308953592 2024-08-30T10-05-11_916-jvmRun1 surefire-20240830100512066_1tmp surefire_0-20240830100512066_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\LAB\Desktop\Dia a Dia\Projetos\DesafioBugBank\Automacao\target\test-classes;C:\Users\LAB\Desktop\Dia a Dia\Projetos\DesafioBugBank\Automacao\target\classes;C:\Users\LAB\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\LAB\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\LAB\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\LAB\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\LAB\.m2\repository\io\cucumber\cucumber-junit\7.18.0\cucumber-junit-7.18.0.jar;C:\Users\LAB\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\LAB\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-java\4.23.0\selenium-java-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-api\4.23.0\selenium-api-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.23.0\selenium-chrome-driver-4.23.0.jar;C:\Users\LAB\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.23.0\selenium-chromium-driver-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-json\4.23.0\selenium-json-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.23.0\selenium-manager-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.23.0\selenium-devtools-v125-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.23.0\selenium-devtools-v126-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.23.0\selenium-devtools-v127-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.23.0\selenium-devtools-v85-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.23.0\selenium-edge-driver-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.23.0\selenium-firefox-driver-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-http\4.23.0\selenium-http-4.23.0.jar;C:\Users\LAB\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.23.0\selenium-ie-driver-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.23.0\selenium-remote-driver-4.23.0.jar;C:\Users\LAB\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\LAB\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\LAB\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\LAB\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\LAB\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\LAB\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\LAB\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-api\1.40.0\opentelemetry-api-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-context\1.40.0\opentelemetry-context-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.40.0\opentelemetry-exporter-logging-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.40.0\opentelemetry-sdk-common-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.40.0\opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.40.0\opentelemetry-sdk-extension-autoconfigure-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.40.0-alpha\opentelemetry-api-incubator-1.40.0-alpha.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.40.0\opentelemetry-sdk-trace-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.40.0\opentelemetry-sdk-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.40.0\opentelemetry-sdk-metrics-1.40.0.jar;C:\Users\LAB\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.40.0\opentelemetry-sdk-logs-1.40.0.jar;C:\Users\LAB\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-os\4.23.0\selenium-os-4.23.0.jar;C:\Users\LAB\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.23.0\selenium-safari-driver-4.23.0.jar;C:\Users\LAB\.m2\repository\org\seleniumhq\selenium\selenium-support\4.23.0\selenium-support-4.23.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\LAB\AppData\Local\Temp\surefire4346908212792233365\surefirebooter-20240820160116765_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\LAB\AppData\Local\Temp\surefire15936443247308953592\surefirebooter-20240830100512066_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
@@ -49,14 +49,14 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jre-11.0.23.9-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jre-21.0.1.12-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-17bin;C:\Gradle\gradle-8.4\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Maven\apache-maven-3.9.8\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\LAB\.console-ninja\.bin;C:\Users\LAB\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\LAB\AppData\Local\Programs\Python\Python311\;C:\Users\LAB\AppData\Local\Microsoft\WindowsApps;C:\Users\LAB\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LAB\AppData\Roaming\npm;C:\Maven\apache-maven-3.9.8\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Eclipse Adoptium\jre-11.0.23.9-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jre-21.0.1.12-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-17bin;C:\Gradle\gradle-8.4\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Maven\apache-maven-3.9.8\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Git\cmd;C:\Users\LAB\.console-ninja\.bin;C:\Users\LAB\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\LAB\AppData\Local\Programs\Python\Python311\;C:\Users\LAB\AppData\Local\Microsoft\WindowsApps;C:\Users\LAB\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LAB\AppData\Roaming\npm;C:\Maven\apache-maven-3.9.8\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Usuário clica no botão de registro" classname="Exibição do formulário de registro" time="1.502">
+  <testcase name="Usuário clica no botão de registro" classname="Exibição do formulário de registro" time="1.367">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: UsuÃ¡rio clica no botÃ£o de registro                                 &amp#27;[90m# com/bugbank/features/registrocucumber.feature:5&amp#27;[0m
@@ -64,8 +64,11 @@ CenÃ¡rio: UsuÃ¡rio clica no botÃ£o de registro                            
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no botao de registrar&amp#27;[0m                             &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_no_botao_de_registrar()&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibido o formulario para o registro da conta do usuario&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibido_o_formulario_para_o_registro_da_conta_do_usuario()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:05:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir saldo inicial ao acessar a conta #1" classname="Exibição do formulário de registro" time="3.827">
+  <testcase name="Exibir saldo inicial ao acessar a conta #1" classname="Exibição do formulário de registro" time="3.711">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: Exibir saldo inicial ao acessar a conta                                         &amp#27;[90m# com/bugbank/features/registrocucumber.feature:10&amp#27;[0m
@@ -75,8 +78,11 @@ CenÃ¡rio: Exibir saldo inicial ao acessar a conta                             
 Saldo em conta R$ 1.000,00
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida na tela inicial do bugbank com um saldo inicial de &amp#27;[0m&amp#27;[32m&amp#27;[1m'1.000,00'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_na_tela_inicial_do_bugbank_com_um_saldo_inicial_de(java.lang.String)&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:05:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir saldo inicial ao acessar a conta #2" classname="Exibição do formulário de registro" time="2.492">
+  <testcase name="Exibir saldo inicial ao acessar a conta #2" classname="Exibição do formulário de registro" time="2.434">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: Exibir saldo inicial ao acessar a conta                                         &amp#27;[90m# com/bugbank/features/registrocucumber.feature:16&amp#27;[0m
@@ -86,8 +92,11 @@ CenÃ¡rio: Exibir saldo inicial ao acessar a conta                             
 Saldo em conta R$ 0,00
   &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser exibida na tela inicial do bugbank com um saldo inicial zerado &amp#27;[0m&amp#27;[32m&amp#27;[1m'0,00'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_na_tela_inicial_do_bugbank_com_um_saldo_inicial_zerado(java.lang.String)&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:05:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir mensagem de campo é obrigatório" classname="Exibição do formulário de registro" time="1.694">
+  <testcase name="Exibir mensagem de campo é obrigatório" classname="Exibição do formulário de registro" time="1.705">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: Exibir mensagem de campo Ã© obrigatÃ³rio                       &amp#27;[90m# com/bugbank/features/registrocucumber.feature:22&amp#27;[0m
@@ -97,8 +106,11 @@ CenÃ¡rio: Exibir mensagem de campo Ã© obrigatÃ³rio                       &
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar em cadastrar&amp#27;[0m                                &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_em_cadastrar()&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser retornado em tela uma mensagem campo e obrigatorio&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_retornado_em_tela_uma_mensagem_campo_e_obrigatorio()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:05:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #1" classname="Exibição do formulário de registro" time="1.642">
+  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #1" classname="Exibição do formulário de registro" time="1.562">
     <system-out><![CDATA[
 @registro
 Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido            &amp#27;[90m# com/bugbank/features/registrocucumber.feature:36&amp#27;[0m
@@ -107,8 +119,11 @@ Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡li
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario tiver preenchindo o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m"email.com"&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_tiver_preenchindo_o_campo_de_email_com_um_email_invalido(java.lang.String)&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro&amp#27;[0m                                         &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_uma_mensagem_de_erro()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:05:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #2" classname="Exibição do formulário de registro" time="1.604">
+  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #2" classname="Exibição do formulário de registro" time="1.657">
     <system-out><![CDATA[
 @registro
 Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido              &amp#27;[90m# com/bugbank/features/registrocucumber.feature:37&amp#27;[0m
@@ -117,8 +132,11 @@ Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡li
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario tiver preenchindo o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m"email@email"&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_tiver_preenchindo_o_campo_de_email_com_um_email_invalido(java.lang.String)&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro&amp#27;[0m                                           &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_uma_mensagem_de_erro()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:05:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #3" classname="Exibição do formulário de registro" time="1.627">
+  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #3" classname="Exibição do formulário de registro" time="1.562">
     <system-out><![CDATA[
 @registro
 Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido             &amp#27;[90m# com/bugbank/features/registrocucumber.feature:38&amp#27;[0m
@@ -127,8 +145,11 @@ Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡li
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario tiver preenchindo o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m"@email.com"&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_tiver_preenchindo_o_campo_de_email_com_um_email_invalido(java.lang.String)&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro&amp#27;[0m                                          &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_uma_mensagem_de_erro()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:05:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Não exibir mensagem de erro ao preencher o campo de e-mail com um e-mail válido" classname="Exibição do formulário de registro" time="6.769">
+  <testcase name="Não exibir mensagem de erro ao preencher o campo de e-mail com um e-mail válido" classname="Exibição do formulário de registro" time="6.676">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: NÃ£o exibir mensagem de erro ao preencher o campo de e-mail com um e-mail vÃ¡lido &amp#27;[90m# com/bugbank/features/registrocucumber.feature:40&amp#27;[0m
@@ -137,8 +158,11 @@ CenÃ¡rio: NÃ£o exibir mensagem de erro ao preencher o campo de e-mail com um
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher o campo de email com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'teste@email.com'&amp#27;[0m      &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_preencher_o_campo_de_email_com_um_email_valido(java.lang.String)&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mnao deve ser retornado para o usuario nenhuma mensagem de erro&amp#27;[0m                   &amp#27;[90m# com.bugbank.steps.RegistroSteps.nao_deve_ser_retornado_para_o_usuario_nenhuma_mensagem_de_erro()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:05:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir uma mensagem de erro caso o campo nome esteja em branco" classname="Exibição do formulário de registro" time="2.22">
+  <testcase name="Exibir uma mensagem de erro caso o campo nome esteja em branco" classname="Exibição do formulário de registro" time="2.209">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: Exibir uma mensagem de erro caso o campo nome esteja em branco &amp#27;[90m# com/bugbank/features/registrocucumber.feature:46&amp#27;[0m
@@ -148,8 +172,11 @@ CenÃ¡rio: Exibir uma mensagem de erro caso o campo nome esteja em branco &amp#
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar em cadastrar&amp#27;[0m                                  &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_em_cadastrar()&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibido uma mensagem de campo nome obrigatorio&amp#27;[0m       &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibido_uma_mensagem_de_campo_nome_obrigatorio()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:06:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir uma mensagem de erro caso o campo de senha esteja em branco" classname="Exibição do formulário de registro" time="1.785">
+  <testcase name="Exibir uma mensagem de erro caso o campo de senha esteja em branco" classname="Exibição do formulário de registro" time="1.725">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: Exibir uma mensagem de erro caso o campo de senha esteja em branco &amp#27;[90m# com/bugbank/features/registrocucumber.feature:53&amp#27;[0m
@@ -159,8 +186,11 @@ CenÃ¡rio: Exibir uma mensagem de erro caso o campo de senha esteja em branco &
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar em cadastrar&amp#27;[0m                                      &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_em_cadastrar()&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibido uma mensagem de campo obrigatorio&amp#27;[0m                &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibido_uma_mensagem_de_campo_obrigatorio()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:06:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Exibir uma mensagem de erro caso o campo de confirmação de senha esteja diferente do campo de senha" classname="Exibição do formulário de registro" time="2.214">
+  <testcase name="Exibir uma mensagem de erro caso o campo de confirmação de senha esteja diferente do campo de senha" classname="Exibição do formulário de registro" time="2.229">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: Exibir uma mensagem de erro caso o campo de confirmaÃ§Ã£o de senha esteja diferente do campo de senha &amp#27;[90m# com/bugbank/features/registrocucumber.feature:60&amp#27;[0m
@@ -171,8 +201,11 @@ CenÃ¡rio: Exibir uma mensagem de erro caso o campo de confirmaÃ§Ã£o de sen
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar em cadastrar&amp#27;[0m                                                                       &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_em_cadastrar()&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro indicando que as senhas nao coincidem&amp#27;[0m                        &amp#27;[90m# com.bugbank.steps.RegistroSteps.devera_ser_exibida_uma_mensagem_de_erro_indicando_que_as_senhas_nao_coincidem()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:06:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
-  <testcase name="Funcionalidade do botão criar conta com saldo" classname="Exibição do formulário de registro" time="2.466">
+  <testcase name="Funcionalidade do botão criar conta com saldo" classname="Exibição do formulário de registro" time="2.379">
     <system-out><![CDATA[
 @registro
 CenÃ¡rio: Funcionalidade do botÃ£o criar conta com saldo      &amp#27;[90m# com/bugbank/features/registrocucumber.feature:68&amp#27;[0m
@@ -181,5 +214,8 @@ CenÃ¡rio: Funcionalidade do botÃ£o criar conta com saldo      &amp#27;[90m# 
   &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no botao criar conta com saldo&amp#27;[0m    &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_usuario_clicar_no_botao_criar_conta_com_saldo()&amp#27;[0m
   &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mo botao criar conta com saldo devera ser habilitado&amp#27;[0m &amp#27;[90m# com.bugbank.steps.RegistroSteps.o_botao_criar_conta_com_saldo_devera_ser_habilitado()&amp#27;[0m
 ]]></system-out>
+    <system-err><![CDATA[ago. 30, 2024 10:06:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
+]]></system-err>
   </testcase>
 </testsuite>

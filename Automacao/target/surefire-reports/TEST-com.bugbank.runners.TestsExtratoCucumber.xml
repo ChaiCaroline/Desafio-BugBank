@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bugbank.runners.TestsLoginCucumber" time="17.397" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bugbank.runners.TestsExtratoCucumber" time="8.96" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -56,137 +56,53 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="Exibir mensagem de erro ao tentar acessar sem preencher com e-mail e senha" classname="Validação dos Campos de Login no BugBank" time="1.431">
+  <testcase name="Redirecionamento ao clicar no botão &quot;Extrato&quot;" classname="Validar funcionalidade extrato" time="2.164">
     <system-out><![CDATA[
-@login
-CenÃ¡rio: Exibir mensagem de erro ao tentar acessar sem preencher com e-mail e senha &amp#27;[90m# com/bugbank/features/logincucumber.feature:10&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                                &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mque o usuario nao tenha preenchido o email e a senha&amp#27;[0m                            &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_nao_tenha_preenchido_o_email_e_a_senha()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                                    &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro com o texto preencha os campos&amp#27;[0m      &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_uma_mensagem_de_erro_com_o_texto_preencha_os_campos()&amp#27;[0m
+@extrato
+CenÃ¡rio: Redirecionamento ao clicar no botÃ£o "Extrato"            &amp#27;[90m# com/bugbank/features/extratocucumber.feature:11&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque usuario esta na tela inicial do Bugbank&amp#27;[0m                &amp#27;[90m# com.bugbank.steps.ExtratoSteps.que_usuario_esta_na_tela_inicial_do_Bugbank()&amp#27;[0m
+Valor armazenado no localStorage: {"name":"Paula","email":"chaiene@email.com","password":"123","accountNumber":"850-4","balance":1000,"logged":false}
+Valor armazenado no localStorage: {"name":"Paula","email":"terezinha@email.com","password":"123","accountNumber":"101-2","balance":1000,"logged":false}
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido os campos de email e senha validos&amp#27;[0m &amp#27;[90m# com.bugbank.steps.ExtratoSteps.o_usuario_tenha_preenchido_os_campos_de_email_e_senha_validos()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mesteja na tela inicial&amp#27;[0m                                        &amp#27;[90m# com.bugbank.steps.ExtratoSteps.esteja_na_tela_inicial()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no botao de Extrato&amp#27;[0m                     &amp#27;[90m# com.bugbank.steps.ExtratoSteps.o_usuario_clicar_no_botao_de_extrato()&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser redirecionado para a tela de extrato&amp#27;[0m           &amp#27;[90m# com.bugbank.steps.ExtratoSteps.devera_ser_redirecionado_para_a_tela_de_extrato()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[ago. 30, 2024 10:05:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
 ]]></system-err>
   </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #1" classname="Validação dos Campos de Login no BugBank" time="1.383">
+  <testcase name="Exibição de transferências na tela de extrato após uma transferência realizada" classname="Validar funcionalidade extrato" time="2.457">
     <system-out><![CDATA[
-@login
-Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido    &amp#27;[90m# com/bugbank/features/logincucumber.feature:24&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                            &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email.com'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.oUsuarioPreencherOCampoDeEmailComUmEmailInvalido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro com o texto email invalido&amp#27;[0m      &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_uma_mensagem_de_erro_com_o_texto_email_invalido()&amp#27;[0m
+@extrato
+CenÃ¡rio: ExibiÃ§Ã£o de transferÃªncias na tela de extrato apÃ³s uma transferÃªncia realizada &amp#27;[90m# com/bugbank/features/extratocucumber.feature:15&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque usuario esta na tela inicial do Bugbank&amp#27;[0m                                      &amp#27;[90m# com.bugbank.steps.ExtratoSteps.que_usuario_esta_na_tela_inicial_do_Bugbank()&amp#27;[0m
+Valor armazenado no localStorage: {"name":"Paula","email":"chaiene@email.com","password":"123","accountNumber":"850-4","balance":1000,"logged":false}
+Valor armazenado no localStorage: {"name":"Paula","email":"terezinha@email.com","password":"123","accountNumber":"101-2","balance":1000,"logged":false}
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido os campos de email e senha validos&amp#27;[0m                       &amp#27;[90m# com.bugbank.steps.ExtratoSteps.o_usuario_tenha_preenchido_os_campos_de_email_e_senha_validos()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mesteja na tela inicial&amp#27;[0m                                                              &amp#27;[90m# com.bugbank.steps.ExtratoSteps.esteja_na_tela_inicial()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario ja tenha realizado uma transferencia para outra conta&amp#27;[0m                     &amp#27;[90m# com.bugbank.steps.ExtratoSteps.o_usuario_ja_tenha_realizado_uma_transferencia_para_outra_conta()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no botao de Extrato&amp#27;[0m                                           &amp#27;[90m# com.bugbank.steps.ExtratoSteps.o_usuario_clicar_no_botao_de_extrato()&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdeverao ser exibidas na tela todas as transferencias realizadas pelo usuario&amp#27;[0m    &amp#27;[90m# com.bugbank.steps.ExtratoSteps.deverao_ser_exibidas_na_tela_todas_as_transferencias_realizadas_pelo_usuario()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[ago. 30, 2024 10:05:15 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
 ]]></system-err>
   </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #2" classname="Validação dos Campos de Login no BugBank" time="1.393">
+  <testcase name="Exibição de transferências na tela de extrato após recebimento de uma transferência" classname="Validar funcionalidade extrato" time="1.652">
     <system-out><![CDATA[
-@login
-Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido      &amp#27;[90m# com/bugbank/features/logincucumber.feature:25&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                              &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email@email'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.oUsuarioPreencherOCampoDeEmailComUmEmailInvalido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro com o texto email invalido&amp#27;[0m        &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_uma_mensagem_de_erro_com_o_texto_email_invalido()&amp#27;[0m
+@extrato
+CenÃ¡rio: ExibiÃ§Ã£o de transferÃªncias na tela de extrato apÃ³s recebimento de uma transferÃªncia &amp#27;[90m# com/bugbank/features/extratocucumber.feature:20&amp#27;[0m
+  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque usuario esta na tela inicial do Bugbank&amp#27;[0m                                           &amp#27;[90m# com.bugbank.steps.ExtratoSteps.que_usuario_esta_na_tela_inicial_do_Bugbank()&amp#27;[0m
+Valor armazenado no localStorage: {"name":"Paula","email":"chaiene@email.com","password":"123","accountNumber":"850-4","balance":1000,"logged":false}
+Valor armazenado no localStorage: {"name":"Paula","email":"terezinha@email.com","password":"123","accountNumber":"101-2","balance":1000,"logged":false}
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido os campos de email e senha validos&amp#27;[0m                            &amp#27;[90m# com.bugbank.steps.ExtratoSteps.o_usuario_tenha_preenchido_os_campos_de_email_e_senha_validos()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mesteja na tela inicial&amp#27;[0m                                                                   &amp#27;[90m# com.bugbank.steps.ExtratoSteps.esteja_na_tela_inicial()&amp#27;[0m
+  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario ja tenha recebido uma transferencia&amp#27;[0m                                            &amp#27;[90m# com.bugbank.steps.ExtratoSteps.o_usuario_ja_tenha_recebido_uma_transferencia()&amp#27;[0m
+  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no botao de Extrato&amp#27;[0m                                                &amp#27;[90m# com.bugbank.steps.ExtratoSteps.o_usuario_clicar_no_botao_de_extrato()&amp#27;[0m
+  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdeverÃ£o ser exibidas na tela todas as transferencias recebidas pelo usuario&amp#27;[0m          &amp#27;[90m# com.bugbank.steps.ExtratoSteps.deverÃ£o_ser_exibidas_na_tela_todas_as_transferencias_recebidas_pelo_usuario()&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
-]]></system-err>
-  </testcase>
-  <testcase name="Exibir mensagem de erro ao preencher com e-mail inválido #3" classname="Validação dos Campos de Login no BugBank" time="1.39">
-    <system-out><![CDATA[
-@login
-Esquema do CenÃ¡rio: Exibir mensagem de erro ao preencher com e-mail invÃ¡lido     &amp#27;[90m# com/bugbank/features/logincucumber.feature:26&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                             &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario preencher o campo de email com um email invalido &amp#27;[0m&amp#27;[32m&amp#27;[1m'@email.com'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.oUsuarioPreencherOCampoDeEmailComUmEmailInvalido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mdevera ser exibida uma mensagem de erro com o texto email invalido&amp#27;[0m       &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_uma_mensagem_de_erro_com_o_texto_email_invalido()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
-]]></system-err>
-  </testcase>
-  <testcase name="Não exibir mensagem de erro ao preencher o campo de e-mail com um e-mail válido" classname="Validação dos Campos de Login no BugBank" time="1.473">
-    <system-out><![CDATA[
-@login
-CenÃ¡rio: NÃ£o exibir mensagem de erro ao preencher o campo de e-mail com um e-mail vÃ¡lido &amp#27;[90m# com/bugbank/features/logincucumber.feature:28&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                                     &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email@email.com'&amp#27;[0m                     &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_tenha_preenchido_com_um_email_valido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                                         &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntÃ£o &amp#27;[0m&amp#27;[32mnao deve ser retornado para o usuario nenhuma mensagem de erro no campo email&amp#27;[0m    &amp#27;[90m# com.bugbank.steps.LoginSteps.nao_deve_ser_retornado_para_o_usuario_nenhuma_mensagem_de_erro_no_campo_email()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:27 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
-]]></system-err>
-  </testcase>
-  <testcase name="Exibir mensagem de erro, quando não preencher o campo de senha" classname="Validação dos Campos de Login no BugBank" time="1.417">
-    <system-out><![CDATA[
-@login
-CenÃ¡rio: Exibir mensagem de erro, quando nÃ£o preencher o campo de senha                            &amp#27;[90m# com/bugbank/features/logincucumber.feature:34&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                                               &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email@email.com'&amp#27;[0m                               &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_tenha_preenchido_com_um_email_valido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mnao tenha preenchido nenhuma senha&amp#27;[0m                                                             &amp#27;[90m# com.bugbank.steps.LoginSteps.nao_tenha_preenchido_nenhuma_senha()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                                                   &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser apresentado ao usuario uma mensagem de erro com o texto campo senha obrigatorio&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_apresentado_ao_usuario_uma_mensagem_de_erro_com_o_texto_campo_senha_obrigatorio()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario deve permanecer na tela de login&amp#27;[0m                                                     &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_deve_permanecer_na_tela_de_login()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:29 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
-]]></system-err>
-  </testcase>
-  <testcase name="Exibir o texto digitado ao clicar no ícone no campo de senha." classname="Validação dos Campos de Login no BugBank" time="1.45">
-    <system-out><![CDATA[
-@login
-CenÃ¡rio: Exibir o texto digitado ao clicar no Ã­cone no campo de senha. &amp#27;[90m# com/bugbank/features/logincucumber.feature:42&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                   &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario tenha preenchido com um email valido &amp#27;[0m&amp#27;[32m&amp#27;[1m'email@email.com'&amp#27;[0m   &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_tenha_preenchido_com_um_email_valido(java.lang.String)&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mtenha preechido com uma senha&amp#27;[0m                                      &amp#27;[90m# com.bugbank.steps.LoginSteps.tenha_preechido_com_uma_senha()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario clicar no Ã­cone de olho no campo de senha&amp#27;[0m           &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_clicar_no_Ã­cone_de_olho_no_campo_de_senha()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser exibido para o usuario a senha digitada&amp#27;[0m             &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibido_para_o_usuario_a_senha_digitada()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mdevera ser alterado o Ã­cone de olho no campo de senha&amp#27;[0m              &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_alterado_o_Ã­cone_de_olho_no_campo_de_senha()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
-]]></system-err>
-  </testcase>
-  <testcase name="Redirecionar o usuário ao logar no sistema" classname="Validação dos Campos de Login no BugBank" time="1.684">
-    <system-out><![CDATA[
-@login
-CenÃ¡rio: Redirecionar o usuÃ¡rio ao logar no sistema                          &amp#27;[90m# com/bugbank/features/logincucumber.feature:50&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                         &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-Valor armazenado no localStorage: {"name":"Paula","email":"teste@email.com","password":"123","accountNumber":"850-4","balance":1000,"logged":false}
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mque o usuario tenha preenchido com um &amp#27;[0m&amp#27;[32m&amp#27;[1m'teste@email.com'&amp#27;[0m&amp#27;[32m e a &amp#27;[0m&amp#27;[32m&amp#27;[1m'123'&amp#27;[0m&amp#27;[32m valido&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_tenha_preenchido_com_uma_email_e_a_senha_valido(java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                             &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo usuario devera ser redirecionado para a tela inicial BugBank&amp#27;[0m       &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_devera_ser_redirecionado_para_a_tela_inicial_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mdeve ser apresentado as informacoes relacionadas ao usuario&amp#27;[0m              &amp#27;[90m# com.bugbank.steps.LoginSteps.deve_ser_apresentado_as_informacoes_relacionadas_ao_usuario()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
-]]></system-err>
-  </testcase>
-  <testcase name="Acessar a página inicial sem estar logado." classname="Validação dos Campos de Login no BugBank" time="1.375">
-    <system-out><![CDATA[
-@login
-CenÃ¡rio: Acessar a pÃ¡gina inicial sem estar logado.                                          &amp#27;[90m# com/bugbank/features/logincucumber.feature:57&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                                         &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario nao esta logado no BugBank&amp#27;[0m                                                     &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_nao_esta_logado_no_bug_bank()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario tentar acessar a pagina atraves da url &amp#27;[0m&amp#27;[32m&amp#27;[1m'https://bugbank.netlify.app/home'&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_tentar_acessar_a_pagina_atraves_da_url(java.lang.String)&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mo usuario deve permanecer na tela inicial pois nao esta logada&amp#27;[0m                       &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_deve_permanecer_na_tela_inicial_pois_nao_esta_logada()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
-]]></system-err>
-  </testcase>
-  <testcase name="Exibir um texto de erro, ao tentar logar com credenciais incorretas" classname="Validação dos Campos de Login no BugBank" time="2.026">
-    <system-out><![CDATA[
-@login
-CenÃ¡rio: Exibir um texto de erro, ao tentar logar com credenciais incorretas   &amp#27;[90m# com/bugbank/features/logincucumber.feature:63&amp#27;[0m
-  &amp#27;[32mDado &amp#27;[0m&amp#27;[32mque o usuario esta na tela inicial do BugBank&amp#27;[0m                           &amp#27;[90m# com.bugbank.steps.LoginSteps.que_o_usuario_esta_na_tela_inicial_do_bug_bank()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mo usuario digitou um email nao cadastrado&amp#27;[0m                                  &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_digitou_um_email_nao_cadastrado()&amp#27;[0m
-  &amp#27;[32mE &amp#27;[0m&amp#27;[32mtenha preechido com uma senha&amp#27;[0m                                              &amp#27;[90m# com.bugbank.steps.LoginSteps.tenha_preechido_com_uma_senha()&amp#27;[0m
-  &amp#27;[32mQuando &amp#27;[0m&amp#27;[32mo usuario ao clicar no botao de acessar&amp#27;[0m                               &amp#27;[90m# com.bugbank.steps.LoginSteps.o_usuario_ao_clicar_no_botao_de_acessar()&amp#27;[0m
-  &amp#27;[32mEntao &amp#27;[0m&amp#27;[32mdevera ser exibida ao usuario uma mensagem de email ou senha invalidos&amp#27;[0m &amp#27;[90m# com.bugbank.steps.LoginSteps.devera_ser_exibida_ao_usuario_uma_mensagem_de_email_ou_senha_invalidos()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[ago. 30, 2024 10:05:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[ago. 30, 2024 10:05:18 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 128, returning the closest version; found: 127; Please update to a Selenium version that supports CDP version 128
 ]]></system-err>
   </testcase>

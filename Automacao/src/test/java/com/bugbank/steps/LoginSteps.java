@@ -104,7 +104,7 @@ public class LoginSteps {
     // Cenário 6
     @E("que o usuario tenha preenchido com um {string} e a {string} valido")
     public void que_o_usuario_tenha_preenchido_com_uma_email_e_a_senha_valido(String email, String password) {
-        loginPage.createLocalStorage(email, password);
+        loginPage.createLocalStorage(email, password, "850-4");
         loginPage.checkInputLogin(email, password);
     }
 
